@@ -1,0 +1,10 @@
+# Node.js dependencies are managed through package.json
+# This file is for any Python dependencies that might be needed
+# For this project, there are no Python dependencies required
+
+# JavaScript dependencies (listed here for reference):
+# @google/generative-ai ^0.5.0
+# dotenv ^16.3.1
+# express ^4.18.2
+# ws ^8.13.0
+# nodemon ^3.0.1 (dev dependency)

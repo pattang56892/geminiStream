@@ -1,0 +1,143 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #1a73e8;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 30px auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #1557b0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#chat-container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  height: 60vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  border-radius: 18px;
+  max-width: 80%;
+  word-wrap: break-word;
+  position: relative;
+  line-height: 1.5;
+}
+
+.message::before {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #1a73e8;
+  color: white;
+  border-bottom-right-radius: 4px;
+  margin-left: auto;
+}
+
+.user-message::before {
+  content: "You";
+  color: #e0e0ff;
+}
+
+.ai-message {
+  align-self: flex-start;
+  background-color: #e9e9eb;
+  color: #333;
+  border-bottom-left-radius: 4px;
+  margin-right: auto;
+}
+
+.ai-message::before {
+  content: "Gemini";
+  color: #1a73e8;
+}
+
+.status {
+  color: #5f6368;
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .message {
+    max-width: 85%;
+  }
+  
+  button {
+    padding: 10px 20px;
+    width: 80%;
+  }
+  
+  #chat-container {
+    padding: 15px;
+    height: 70vh;
+  }
+}
+
+/* Code formatting within messages */
+.message pre, .message code {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 8px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 8px 0;
+  display: block;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
+.user-message pre, .user-message code {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
