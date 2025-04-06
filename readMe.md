@@ -15,7 +15,7 @@ It also interfaces with speech recognition functionality on the frontend.
 ```bash
 npm install
 
-npm start
+npm start (or npm run dev)
 
 License
 MIT License
