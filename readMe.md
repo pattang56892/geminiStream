@@ -4,7 +4,11 @@ A streaming interface for Gemini API.
 
 ## Description
 
-[Add a brief description of your project here]
+This application is a real-time chat interface that connects a web frontend to the Gemini 1.5 Pro AI model from Google. It uses Express.js to serve static content, creates an HTTP server, and establishes WebSocket connections for real-time communication. When a client connects, they receive a welcome message. The server maintains a conversation history to provide context for each interaction. When a user sends a message, it's added to the history, sent to the Gemini API, and the response is then returned to the client through the WebSocket connection and also stored in the conversation history.
+
+The application is designed to handle speech input, as evidenced by the welcome message mentioning a "Start Speaking" button,
+
+It also interfaces with speech recognition functionality on the frontend.
 
 ## Installation
 
@@ -31,3 +35,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+```
